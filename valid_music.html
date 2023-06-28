@@ -1,0 +1,47 @@
+<!-- Ethan Hartman -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add description of the page -->
+    <meta name="description" content="UAT CSC102 Module 3 Assignment">
+    <!-- Link the stylesheet -->
+    <link rel="stylesheet" href='valid_music.css'>
+    <!-- Link js file -->
+    <script type="text/javascript" src="valid_music.js" defer></script>
+    <!-- add a title -->
+    <title>User Input Validation</title>
+</head>
+
+<body>
+    <!-- create a new form with an id for styling, a name for referencing, return a function value to determine submittal processing, choose a target window and action for the submittal -->
+    <form id='userInfoForm' name="userInfoForm" onsubmit="return validateInput()" target="_blank" action="valid_music2.html">
+        <div>
+            <!-- let the user know the rules for the first and last name -->
+            <p>(Limit: First and Last name combined - 20 characters)</p>
+                <!-- create a label for the first input box (for must match name/id for input box) -->
+            <label for="firstName">Enter your First name <br></label>
+                <!-- create an input box for the first name entry, entry is 'required' -->
+                <input type="'text" name="firstName" id="firstName" required><br>
+            <!-- create a label for the second input box (for must match name/id for input box) -->
+            <label for="lasttName">Enter your Last name<br></label>
+                <!-- create an input box for the last name entry, entry is 'required' -->
+                <input type="'text" name="lasttName" id="lastName" required><br>
+            <!-- create a label for the last input box (for must match name/id for input box) -->
+            <label for="zipCode">Enter your Zip code(5 digits)<br></label>
+                <!-- create an input box for the zipcode entry, entry is 'required' -->
+                <input type="number" name="zipCode" id="zipCode" required><br>
+            <!-- create a submittal button -->
+            <button type='submit' id="submit_btn">Submit Here to learn the secret</button> 
+        </div>
+    </form>
+    <!-- let the user know about the audio controls -->
+    <p id="musicLabel">Use the controls to play some background music!</p>
+    <!-- create an audio cotrol bar with the audio clip to play -->
+    <audio id='homeMusic' controls autoplay loop>
+        <source src="Bluegrass Bean.mp3" type="audio/mp3">
+    </audio>
+
+</body>
+</html>

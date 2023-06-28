@@ -1,0 +1,45 @@
+body{
+    background-image: url('tell_secret.png');
+    background-repeat: no-repeat;
+    background-color: green;
+}
+
+#body2{
+    background-image: url('cool_beans.png');
+    background-repeat:no-repeat;
+    background-color: black;
+}
+
+#submit_btn{
+    margin-top: 2%;
+    margin-left: 0%;
+    border-width: 5px;
+    border-style:outset;
+    width: 125px;
+    height:50px;
+}
+
+#userInfoForm{
+    text-align: center;
+    display: block;
+    margin-top: 30%;
+    float:right;
+    background-color: rgb(131, 202, 202, 0.7);
+    font-weight:bold;
+}
+
+#rick{
+margin-top:575px;
+}
+
+#musicLabel{
+    position: fixed;
+    top: 725px;
+    float:left;
+}
+
+#homeMusic{
+    position: fixed;
+    top: 775px;
+    float:left;
+}
